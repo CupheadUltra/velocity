@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+.container {
+  max-width: 970px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+p {
+  color: #6a859c;
+  line-height: 1.8;
+}
+/* header */
+.header {
+  padding: 20px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #69b9ff;
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.header-nav ul {
+  display: flex;
+  gap: 40px;
+}
+.header-nav a {
+  color: #676770;
+  font-size: 16px;
+  transition: color 0.2s;
+}
+.header-nav a:hover {
+  color: #0082f3;
+}
+.header-nav a:active {
+  color: #0062b6;
+}
+/* main */
+.main {
+}
+/* welcome */
+.welcome {
+  padding: 195px 0;
+  height: 100vh;
+  background-color: #282936;
+  background-size: cover;
+  background-position: center;
+  min-height: 600px;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/welcome-bg.jpg");
+}
+.welcome-heading {
+  font-size: 59px;
+  line-height: 1;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 100px;
+}
+.welcome-links > * + * {
+  margin-left: 20px;
+}
+.link-primary {
+  display: inline-block;
+  padding: 11px 30px;
+  border-radius: 4px;
+  background: #69b9ff;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: background-color 0.1s;
+}
+.link-primary:hover {
+  background-color: #7cc2ff;
+}
+.link-primary:active {
+  background-color: #0f8fff;
+}
+.link {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  transition: border-color 0.1s, background-color 0.1s;
+}
+.link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.link:active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.5);
+}
